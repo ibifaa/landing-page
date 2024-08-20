@@ -19,19 +19,19 @@ function Header() {
   
 
   return (
-    <div className="relative z-2 flex w-full justify-between shadow-sm px-5 sm:px-[100px] py-2 bg-[#070527] text-white items-center">
+    <div className="relative z-2 flex w-full justify-between shadow-sm px-5 md:px-[100px] py-2 bg-[#070527] text-white items-center">
       <div> <h3 className="text-[24px]">Appnovia</h3></div>
        
 
-       <div className=" w-[100%] sm:w-[60%]">
+       <div className=" w-[100%] md:w-[60%]">
        <ul
-    className={`absolute sm:flex z-1 w-[100%] sm:w-[60%]  h-[100vh] sm:h-1 sm:p-0 p-5 bg-white sm:bg-transparent gap-[30px] justify-center right-0 sm:right-[20%] top-[50px] sm:top-[15px] ${isOpen ? "block" : "hidden"}`}
+    className={`absolute sm:flex z-1 w-[100%] sm:w-[60%]  h-[100vh] sm:h-1 sm:p-0 p-5 sm:text-white bg-white sm:bg-transparent gap-[30px] justify-center right-0 sm:right-[20%] top-[50px] sm:top-[15px] ${isOpen ? "block" : "hidden"}`}
   >
-    <li className="list-none text-black sm:text-white text-[20px] sm:text-[16px] m-3 sm:m-0">Home</li>
-    <li className="list-none text-black sm:text-white text-[20px] sm:text-[16px] m-3 sm:m-0">Products</li>
-    <li className="list-none text-black sm:text-white text-[20px] sm:text-[16px] m-3 sm:m-0">Solutions</li>
-    <li className="list-none text-black sm:text-white text-[20px] sm:text-[16px] m-3 sm:m-0">Testimonials</li>
-    <li className="list-none text-black sm:text-white text-[20px] sm:text-[16px] m-3 sm:m-0">Contact Us</li>
+    <li className="list-none text-black md:text-white text-[20px] sm:text-[16px] m-3 sm:m-0">Home</li>
+    <li className="list-none text-black md:text-white text-[20px] sm:text-[16px] m-3 sm:m-0">Products</li>
+    <li className="list-none text-black md:text-white text-[20px] sm:text-[16px] m-3 sm:m-0">Solutions</li>
+    <li className="list-none text-black md:text-white text-[20px] sm:text-[16px] m-3 sm:m-0">Testimonials</li>
+    <li className="list-none text-black md:text-white text-[20px] sm:text-[16px] m-3 sm:m-0">Contact Us</li>
   </ul>
        </div>
 

@@ -267,7 +267,7 @@ function Products() {
     </div>
 
 
-    <div className="flex sm:flex-row flex-col sm:px-[100px] px-[20px] py-[40px] gap-[20px] bg-[#00C6C31A] ">
+    <div className="flex sm:flex-row flex-col sm:px-[100px] px-[20px] py-[50px] sm:gap-[20px] gap-[30px] bg-[#00C6C31A] items-center ">
       <div className="sm:w-[40%] w-[100%]">
         <h3 className="text-[32px] leading-[48px] font-semibold">
         Experience Advance EMR Through Our Lens
@@ -280,8 +280,8 @@ function Products() {
           Learn More
         </button>
       </div>
-      <div className=" w-[60%]">
-       <img src={media} alt="media" />
+      <div className=" sm:w-[60%] w-full">
+       <img className="w-[100%]" src={media} alt="media" />
       </div>
     </div>
       
