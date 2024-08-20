@@ -9,7 +9,7 @@ function Hero() {
   
   "
   style={{
-    backgroundImage: `linear-gradient(90deg, #020024CC 25%, rgba(188, 189, 190, 0.1) 40%), url(${hero})`,
+    backgroundImage: `linear-gradient(90deg, #020024CC 25%, rgba(188, 189, 190, 0.1) 40%), url(${'/files/hero.png'})`,
     // backgroundPosition: 'top left, -292px -199.998px',
     // backgroundSize: 'cover, 120.893% 228.667%',
   }}>
