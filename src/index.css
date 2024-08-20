@@ -4,7 +4,7 @@
   /* height: 100vh; */
   
   background:
-    linear-gradient(90deg, #020024CC 25%, #020024CC 50%),
+    linear-gradient(90deg, #020024CC 25%, rgba(188, 189, 190, 0.1)40%),
     url("./assets/png/hero.png"),
     lightgray -292px -199.998px / 120.893% 228.667% no-repeat;
   /* background-image: url("/public/assets/homeImages/homepage1.png");
