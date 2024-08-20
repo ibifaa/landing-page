@@ -14,7 +14,7 @@ function TestimonialCard({ item }) {
     </div>
   </div>
   <p className="text-[16px] font-normal leading-[24px] text-ellipsis overflow-hidden">
-    {item.test}
+    {/* {item.test} */}
   </p>
 </div>
   );
