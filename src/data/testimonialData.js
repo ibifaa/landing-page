@@ -31,7 +31,13 @@ const softwareSolutionData = [
         test: "Implementing Appnovia's EMR solutions has been a game-changer for our hospital. The integration of patient records, streamlined workflows, and user-friendly interface have significantly improved patient care." 
     }, 
 
-    {url: test1,
+    {url: test5,
+        name: "Prof. Jude Okohue",
+        position: "CEO, Gynescope Specialist Hospital",
+        test: "Implementing Appnovia's EMR solutions has been a game-changer for our hospital. The integration of patient records, streamlined workflows, and user-friendly interface have significantly improved patient care." 
+    }, 
+
+    {url: test5,
         name: "Prof. Jude Okohue",
         position: "CEO, Gynescope Specialist Hospital",
         test: "Implementing Appnovia's EMR solutions has been a game-changer for our hospital. The integration of patient records, streamlined workflows, and user-friendly interface have significantly improved patient care." 

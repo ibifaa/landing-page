@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="bg-[#020024] px-[100px] text-white"> 
+    <div className="bg-[#020024] px-[100px] text-white py-[20px]"> 
       <div className="2fr">
         <h3 className="text-[40px] leading-[60px]">Appnovia</h3>
       </div>
@@ -22,14 +22,14 @@ function Footer() {
           </div>
         </div>
         <div className="col-span-1">
-          <h4>Products</h4>
+          <h4 className="text-[20px] leading-[30px] font-bold mb-[20px]">Products</h4>
           <ul>
             <li>Novia Care</li>
             <li>Novia Book</li>
           </ul>
         </div>
         <div className="col-span-1">
-          <h4>Services</h4>
+          <h4 className="text-[20px] leading-[30px] font-bold mb-[20px]">Services</h4>
           <ul>
             <li>Enterprise Resource Planning</li>
             <li>Human Resource</li>
@@ -40,14 +40,14 @@ function Footer() {
           </ul>
         </div>
         <div className="col-span-1">
-          <h4>Company</h4>
+          <h4 className="text-[20px] leading-[30px] font-bold mb-[20px]">Company</h4>
           <ul>
             <li>About Us</li>
             <li> Contact Us</li>
           </ul>
         </div>
         <div className="col-span-1">
-          <h4>Legal</h4>
+          <h4 className="text-[20px] leading-[30px] font-bold mb-[20px]">Legal</h4>
           <ul>
             <li>Privacy Policy</li>
             <li> Terms of Service</li>
