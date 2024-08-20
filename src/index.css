@@ -3,19 +3,18 @@
   width: 100%;
   /* height: 100vh; */
   
-  background:
+  /* background:
     linear-gradient(90deg, #020024CC 25%, rgba(188, 189, 190, 0.1)40%),
-    url("../public/files//hero.png"),
+    url("https://i.ibb.co/hDL7P1K/hero.png"),
     lightgray -292px -199.998px / 120.893% 228.667% no-repeat;
-  /* background-image: url("/public/assets/homeImages/homepage1.png");
-    background: linear-gradient(90deg, #FB8B24 40%, rgba(0,0,0,0) 100%);   */
+ 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
-  /* display: flex; */
+.
+
   align-items: center;
-  /* padding-left: 3rem;
-  padding-top: 3rem; */
+ */
 
 }
 
