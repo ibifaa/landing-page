@@ -1,6 +1,6 @@
 import partners from "../partner.js";
 import Partners from "../components/Partners";
-import hero from "../assets/png/hero.png"
+import hero from "/files/hero.png"
 
 function Hero() {
  
