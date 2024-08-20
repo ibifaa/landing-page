@@ -1,6 +1,5 @@
 import partners from "../partner.js";
 import Partners from "../components/Partners";
-import { useEffect } from "react";
 import hero from "../assets/png/hero.png"
 
 function Hero() {
