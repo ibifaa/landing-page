@@ -15,6 +15,10 @@ const partners = [
         text: "BOURBON"
     }, 
 
+    {url: part2,
+        text: "GYNESCOPE"
+    }, 
+
     {url: part3,
         text: "KingSoo"
     }

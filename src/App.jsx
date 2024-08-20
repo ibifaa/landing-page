@@ -1,6 +1,9 @@
 import Header from "./components/Header";
+import Solutions from "./sections/Solutions";
 import Hero from "./sections/Hero";
 import Products from "./sections/Products";
+import Testimonial from "./sections/Testimonial";
+import Footer from "./components/Footer";
 
 function App() {
  
@@ -14,6 +17,15 @@ function App() {
     <section>
       <Products/>
     </section>
+    <section>
+      <Solutions/>
+    </section>
+    <section>
+      <Testimonial/>
+    </section>
+    <footer>
+      <Footer/>
+    </footer>
  
 
      </>
@@ -21,4 +33,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
