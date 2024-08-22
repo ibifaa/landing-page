@@ -1,62 +1,57 @@
-import React from 'react';
-import { Bar } from 'react-chartjs-2';
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-} from 'chart.js';
+'use client';
+import { 
+  BarChart, 
+  Bar, 
+  Rectangle, 
+  XAxis, 
+  YAxis, 
+  CartesianGrid, 
+  Tooltip, 
+  Legend, 
+  ResponsiveContainer 
+} from 'recharts';
 
-// Register necessary components from Chart.js
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend
-);
+import chartData from '../data/chartData.js';
 
-const ChartDesign = ({ chartData, chartLabels, chartTitle }) => {
-  const data = {
-    labels: chartLabels,
-    datasets: [
-      {
-        label: 'Count',
-        data: chartData,
-        backgroundColor: 'rgba(75,192,192,0.6)',
-        borderColor: 'rgba(75,192,192,1)',
-        borderWidth: 1,
-      },
-    ],
-  };
+function ChartDesign(props) {
+    console.log('ChartDesign rendered');
+    console.log(chartData);
 
-  const options = {
-    responsive: true,
-    plugins: {
-      legend: {
-        display: false,
-      },
-      title: {
-        display: true,
-        text: chartTitle,
-      },
-    },
-    scales: {
-      y: {
-        beginAtZero: true,
-      },
-    },
-  };
-
-  return (
-    <div className="max-w-md mx-auto p-4 bg-white rounded-lg shadow-md">
-      <Bar data={data} options={options} />
-    </div>
-  );
-};
+    return (
+      <ResponsiveContainer width="100%" height={300}>
+        <BarChart
+          width={500}
+          height={300}
+          data={chartData}
+          margin={{ right: 30 }}
+        >
+          {/* <CartesianGrid strokeDasharray="3 3" /> */}
+          {/* <XAxis dataKey="name" />
+          <YAxis /> */}
+          {/* <Tooltip content={<CustomTooltip />} /> */}
+          <Legend />
+          <Bar dataKey="h" fill="#020024" activeBar={<Rectangle fill="pink" stroke="blue"  radius="10px" />} />
+          <Bar dataKey="r" fill="#00C6C3" activeBar={<Rectangle fill="gold" stroke="purple"   radius="10px" />} />
+        </BarChart>
+      </ResponsiveContainer>
+    );
+}
 
 export default ChartDesign;
+
+// const CustomTooltip = ({ active, payload, label }) => {
+//   if (active && payload && payload.length) {
+//     return (
+//       <div>
+//         <p>{label}</p>
+//         <p>Hospitalized
+//           <span>{payload[0].value}</span>
+//         </p>
+//         <p>Recovered</p>
+//         <span>{payload[1].value}</span>
+//       </div>
+//     );
+//   }
+//   return null;
+// };
+

@@ -262,7 +262,8 @@ function Products() {
             ))}
           </div>
         </div>
-        <div> <ChartDesign chartData={patientData} chartLabels={patientLabels} chartTitle={chartTitle}/></div>
+        <div> <ChartDesign/></div>
+        {console.log(<ChartDesign/>)}
       </div>
     </div>
 
