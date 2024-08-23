@@ -12,7 +12,7 @@ function Products() {
 
   return (
     <div>
-    <div className="flex sm:flex-row flex-col sm:px-[100px] px-[20px] py-[40px] gap-[20px] ">
+    <div className="flex sm:flex-row flex-col sm:px-[100px] px-[20px] py-[40px] gap-[30px] ">
       <div className="sm:w-[40%] w-[100%]">
         <h3 className="text-[32px] leading-[48px] font-semibold">
           Transform Your Healthcare experience with Our Smart EMR Solutions
@@ -48,38 +48,38 @@ function Products() {
         </button>
       </div>
       <div className=" w-[60%]">
-        <div className="flex justify-between">
-          <div className="flex gap-[10px]">
+        <div className="flex gap-[20px] justify-between">
+          <div className="circleSection flex gap-[5px]">
             {" "}
             <div className="h-[20px] w-[20px] rounded-full bg-[#FD1919]"></div>
             <div className="h-[20px] w-[20px] rounded-full bg-[#FBC60D]"></div>
             <div className="h-[20px] w-[20px] rounded-full bg-[#95FB13]"></div>
           </div>
-          <div className="w-[324px] h-[22px] bg-[#1212121A] rounded-[40px]"></div>
+          <div className="w-[380px] h-[20px] bg-[#1212121A] rounded-[40px]"></div>
           <div className="w-[93px] h-[22px] bg-[#020024] rounded-[40px]"></div>
         </div>
 
         <div className="flex gap-[10px]">
-          <div>
-            <div className="flex flex-col gap-[10px] bg-[#020024] p-5 mt-[20px] pb-[40px]">
-              <div className="flex gap-[5px]">
+          <div className="">
+            <div className=" box flex flex-col gap-[10px] bg-[#020024] p-2 mt-[20px] pb-[40px]">
+              <div className="flex gap-[5px] mb-[7px]">
                 {" "}
-                <div className="h-[20px] w-[20px] rounded-full bg-[#FFFFFF80]"></div>
-                <div className="w-[102px] h-[22px] bg-[#FFFFFF80] rounded-[40px]"></div>
+                <div className="h-[18px] w-[18px] rounded-full bg-[#FFFFFF80]"></div>
+                <div className="w-[100px] h-[18px] bg-[#FFFFFF80] rounded-[40px]"></div>
               </div>
-              <div className="flex gap-[5px]">
+              <div className="flex gap-[5px] mb-[7px]">
                 {" "}
-                <div className="h-[20px] w-[20px] rounded-full bg-[#FFFFFF80]"></div>
-                <div className="w-[102px] h-[22px] bg-[#FFFFFF80] rounded-[40px]"></div>
+                <div className="h-[18px] w-[18px] rounded-full bg-[#FFFFFF80]"></div>
+                <div className="w-[100px] h-[18px] bg-[#FFFFFF80] rounded-[40px]"></div>
               </div>
-              <div className="flex gap-[5px]">
+              <div className="flex gap-[5px] mb-[7px]">
                 {" "}
-                <div className="h-[20px] w-[20px] rounded-full bg-[#FFFFFF80]"></div>
-                <div className="w-[102px] h-[22px] bg-[#FFFFFF80] rounded-[40px]"></div>
+                <div className="h-[18px] w-[18px] rounded-full bg-[#FFFFFF80]"></div>
+                <div className="w-[100px] h-[18px] bg-[#FFFFFF80] rounded-[40px]"></div>
               </div>
             </div>
           </div>
-          <div className="flex justify-between mb-2">
+          <div className="flex  w-full justify-between mb-2">
             {healthData.map((item, index) => (
               <div key={index}>
                 <Card item={item} />

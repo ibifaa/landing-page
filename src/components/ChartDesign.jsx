@@ -1,8 +1,9 @@
 'use client';
 import { 
+  PieChart,
   BarChart, 
+  Pie,
   Bar, 
-  Rectangle, 
   XAxis, 
   YAxis, 
   CartesianGrid, 
@@ -13,45 +14,81 @@ import {
 
 import chartData from '../data/chartData.js';
 
-function ChartDesign(props) {
-    console.log('ChartDesign rendered');
-    console.log(chartData);
+function ChartDesign() {
 
-    return (
-      <ResponsiveContainer width="100%" height={300}>
+  const colors = ["#A7AFAC", "#020024", "#00C6C3"];
+   
+  const data01 = [
+    { "name": "Group A", "value": 9670 },
+    { "name": "Group B", "value": 1274 },
+    { "name": "Group C", "value": 16908 },
+  ];
+
+  const data02 = [
+    { "name": "Group A", "value": 9670, "color": "#A7AFAC" },
+    { "name": "Group B", "value": 1274, "color": "#00C6C3" },
+    { "name": "Group C", "value": 16908, "color": "#020024" },
+  ];
+
+  return (
+    <div className='flex w-full'>
+    <div className='shadow-[#E6E6E6E5] shadow-xl p-5 rounded-[10px]'>
+    <ResponsiveContainer width={200} height={250}>
+        <PieChart>
+          <Pie 
+            data={data01}
+            dataKey="value"
+            nameKey="name"
+            cx="50%"
+            cy="50%"
+            outerRadius={50}
+            fill="#8884d8"
+            // cornerRadius={10}
+          />
+          <Pie 
+            data={data02}
+            dataKey="value"
+            nameKey="name"
+            cx="50%"
+            cy="50%"
+            innerRadius={60}
+            outerRadius={80}
+            startAngle={220}
+            endAngle={-45}
+            paddingAngle={10}
+            cornerRadius={15}
+            fill={({ index }) => colors[index % colors.length]}
+          />
+        </PieChart>
+      </ResponsiveContainer>
+      <div className="flex gap-[5px] mb-[7px]">
+                {" "}
+                <div className="h-[18px] w-[18px] rounded-full bg-[#FFFFFF80]"></div>
+                <div className="w-[100px] h-[18px] bg-[#FFFFFF80] rounded-[40px]"></div>
+              </div>
+              <div className="flex gap-[5px] mb-[7px]">
+                {" "}
+                <div className="h-[18px] w-[18px] rounded-full bg-[#FFFFFF80]"></div>
+                <div className="w-[100px] h-[18px] bg-[#FFFFFF80] rounded-[40px]"></div>
+              </div>
+    </div>
+      <ResponsiveContainer width={400} height={250}>
         <BarChart
-          width={500}
-          height={300}
           data={chartData}
-          margin={{ right: 30 }}
+          margin={{top: 20, right: 30, left: 20, bottom: 5}}
+          barSize={10}
+          barCategoryGap="2%"
+          barGap={2}
         >
-          {/* <CartesianGrid strokeDasharray="3 3" /> */}
-          {/* <XAxis dataKey="name" />
-          <YAxis /> */}
-          {/* <Tooltip content={<CustomTooltip />} /> */}
           <Legend />
-          <Bar dataKey="h" fill="#020024" activeBar={<Rectangle fill="pink" stroke="blue"  radius="10px" />} />
-          <Bar dataKey="r" fill="#00C6C3" activeBar={<Rectangle fill="gold" stroke="purple"   radius="10px" />} />
+          <Bar dataKey="h" fill="#020024" radius={[10, 10, 10, 10]} />
+          <Bar dataKey="r" fill="#00C6C3" radius={[10, 10, 10, 10]} />
         </BarChart>
       </ResponsiveContainer>
-    );
+
+      
+    </div>
+  );
 }
 
 export default ChartDesign;
-
-// const CustomTooltip = ({ active, payload, label }) => {
-//   if (active && payload && payload.length) {
-//     return (
-//       <div>
-//         <p>{label}</p>
-//         <p>Hospitalized
-//           <span>{payload[0].value}</span>
-//         </p>
-//         <p>Recovered</p>
-//         <span>{payload[1].value}</span>
-//       </div>
-//     );
-//   }
-//   return null;
-// };
-
